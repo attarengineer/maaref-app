@@ -1,0 +1,7 @@
+{
+  "name": "maaref-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
