@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="end">اخبار</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let blog of blogs" class="ion-text-right" [routerLink]="['./',blog.id]">
+      <ion-avatar slot="end">
+        <ion-img [src]="blog.imageUrl"></ion-img>
+      </ion-avatar>
+      <ion-label>{{blog.title}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
